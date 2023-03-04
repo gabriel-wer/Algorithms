@@ -3,36 +3,37 @@
 #include <stdlib.h>
 
 void bubble_sort(int *arr, int arr_sz){
-    int tmp=0;
-    int count = 0;
-    while((arr_sz-count) > 0){
-        for (int x=0; x < arr_sz - count; x++){
-            if(arr[x+1] < arr[x]){
-                tmp = arr[x+1];
-                arr[x+1] = arr[x];
-                arr[x] = tmp;
+    for(int y = 0; y < arr_sz; y++){
+        for (int x = 0; x < arr_sz - y; x++){
+            if(arr[x] > arr[x+1]){
+                const int tmp = arr[x];
+                arr[x] = arr[x + 1];
+                arr[x + 1] = tmp;
             }
         }
-        count += 1;
     }
 }
 
 int main(void){
     srand(time(0));
-    int arr[50];
+    int arr[10];
     int arr_sz = sizeof(arr) / sizeof(int);
     printf("UNSORTED\n");
-    for(int x=0; x<=50; x++){
+
+    for(int x=0; x<=10; x++){
         arr[x] = rand() % 1000;
-        printf("%d,", arr[x]);
+        if(x!=0){printf(",");}
+        printf("%d", arr[x]);
     }
 
     bubble_sort(arr, arr_sz);
+
     printf("\n");
     printf("\n");
     printf("SORTED\n");
-    for(int x=0; x<=50; x++){
-        printf("%d,", arr[x]);
+    for(int x=0; x<=10; x++){
+        if(x!=0){printf(",");}
+        printf("%d", arr[x]);
     }
     return 0;
 }
