@@ -6,27 +6,54 @@ struct node {
     struct node *next;
 }; 
 
+struct list {
+    struct node *head;
+    struct node *tail;
+};
 
-struct node *createNode(int value){
-    struct node *newNode = malloc(sizeof(struct node));
-    if(!newNode){
-        return NULL;
-    }
+typedef struct node Node;
+typedef struct list List;
+
+
+void addNode(int value, List *nodeList){
+    Node *newNode = malloc(sizeof(Node));
 
     newNode->value = value;
     newNode->next = NULL;
-
-    return newNode;
+    if (nodeList->head == NULL){
+        nodeList->head = nodeList->tail = newNode;
+    }else{
+        nodeList->tail->next = newNode;
+        nodeList->tail = newNode;
+    }
 }
 
-void addNode(struct node tail, int value){
-    struct node *newNode = createNode(value);
-    tail.next = newNode;
+
+void printNodes(List *nodeList){
+    Node *c = nodeList->head; 
+    for (; ;){
+        printf("%d\n", c->value);
+        if (c->next == NULL){ break; }
+        c = c->next;
+    }
+}
+
+void pop(List *nodeList){
+    printf("%d\n", nodeList->head->value);
+    nodeList->head = nodeList->head->next;
 }
 
 int main(void){
-    struct node *headNode;
 
-    
+    List nodejs = {NULL, NULL};
+    addNode(10, &nodejs);
+    addNode(15, &nodejs);
+    addNode(22, &nodejs);
+    addNode(5,  &nodejs);
+    pop(&nodejs);
+    pop(&nodejs);
+    pop(&nodejs);
+
+
     return 0;
 }
