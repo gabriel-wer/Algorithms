@@ -7,6 +7,7 @@ struct node {
 }; 
 
 struct list {
+    int length;
     struct node *head;
     struct node *tail;
 };
@@ -15,7 +16,7 @@ typedef struct node Node;
 typedef struct list List;
 
 
-void addNode(int value, List *nodeList){
+void enqueue(int value, List *nodeList){
     Node *newNode = malloc(sizeof(Node));
 
     newNode->value = value;
@@ -26,34 +27,38 @@ void addNode(int value, List *nodeList){
         nodeList->tail->next = newNode;
         nodeList->tail = newNode;
     }
+    nodeList->length++;
 }
 
+int peek(List *nodeList){
+    return nodeList->head->value; 
+}
 
-void printNodes(List *nodeList){
-    Node *c = nodeList->head; 
-    for (; ;){
-        printf("%d\n", c->value);
-        if (c->next == NULL){ break; }
-        c = c->next;
+int pop(List *nodeList){
+    if (nodeList->head == NULL){
+        return 0;
     }
-}
-
-void pop(List *nodeList){
-    printf("%d\n", nodeList->head->value);
-    nodeList->head = nodeList->head->next;
+    Node *v = nodeList->head;
+    int va = v->value;
+    nodeList->head = v->next;
+    free(v);
+    nodeList->length--;
+    return va;
 }
 
 int main(void){
 
-    List nodejs = {NULL, NULL};
-    addNode(10, &nodejs);
-    addNode(15, &nodejs);
-    addNode(22, &nodejs);
-    addNode(5,  &nodejs);
-    pop(&nodejs);
-    pop(&nodejs);
-    pop(&nodejs);
-
+    List smoke = {0, NULL, NULL};
+    enqueue(10, &smoke);
+    enqueue(15, &smoke);
+    enqueue(22, &smoke);
+    enqueue(5,  &smoke);
+    printf("peek %d\n", peek(&smoke));
+    printf("%d\n", pop(&smoke));
+    printf("%d\n", pop(&smoke));
+    printf("peek %d\n", peek(&smoke));
+    printf("%d\n", pop(&smoke));
+    printf("peek %d\n", peek(&smoke));
 
     return 0;
 }
