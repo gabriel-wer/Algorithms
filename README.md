@@ -8,18 +8,18 @@ This repo contains examples of data structures and algorithms created by me in d
 
 | Data Structure | C |
 | ----------- | ----------- |
-| [List](https://en.wikipedia.org/wiki/List_(abstract_data_type))   | [<img src="./assets/C.png">](/datastructure/ArrayList.c)   |
-| [Linked List](https://en.wikipedia.org/wiki/Linked_list)          | [<img src="./assets/C.png">](/datastructure/SingleLink.c)  |
+| [List](https://en.wikipedia.org/wiki/List_(abstract_data_type))   | [<img src="./assets/C.png" width="16" height="16">](/datastructure/ArrayList.c)   |
+| [Linked List](https://en.wikipedia.org/wiki/Linked_list)          | [<img src="./assets/C.png" width="16" height="16">](/datastructure/SingleLink.c)  |
 
 
 ## Algorithms
 
 | Search Algorithms | C |
 | ------------------ | ------------ |
-| [Linear Search](https://en.wikipedia.org/wiki/Linear_search)              | [<img src="./assets/C.png">](/search/LinearSearch.c) | 
-| [Binary Search](https://en.wikipedia.org/wiki/Binary_search_algorithm)    | [<img src="./assets/C.png">](/search/BinarySearch.c) | 
+| [Linear Search](https://en.wikipedia.org/wiki/Linear_search)              | [<img src="./assets/C.png" width="16" height="16">](/search/LinearSearch.c) | 
+| [Binary Search](https://en.wikipedia.org/wiki/Binary_search_algorithm)    | [<img src="./assets/C.png" width="16" height="16">](/search/BinarySearch.c) | 
 
 
 | Sorting Algorithms | C |
 | ------------------ | ------------ |
-| [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort) | [<img src="./assets/C.png">](/sort/BubbleSort.c) |
+| [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort) | [<img src="./assets/C.png" width="16" height="16">](/sort/BubbleSort.c) |
