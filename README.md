@@ -6,10 +6,10 @@ This repo contains examples of data structures and algorithms created by me in d
 
 ## Data Structures
 
-| Data Structure | C |
-| ----------- | ----------- |
-| [List](https://en.wikipedia.org/wiki/List_(abstract_data_type))   | [<img src="./assets/c.png" width="16" height="16">](/datastructure/ArrayList.c)   |
-| [Linked List](https://en.wikipedia.org/wiki/Linked_list)          | [<img src="./assets/c.png" width="16" height="16">](/datastructure/SingleLink.c)  |
+| Data Structure | C | Go |
+| ----------- | ----------- | ------- |
+| [List](https://en.wikipedia.org/wiki/List_(abstract_data_type))   | [<img src="./assets/c.png" width="16" height="16">](/datastructure/C/ArrayList.c)   | 
+| [Linked List](https://en.wikipedia.org/wiki/Linked_list)          | [<img src="./assets/c.png" width="16" height="16">](/datastructure/C/SingleLink.c)  |[<img src="./assets/go.png" width="16" height="16">](/datastructure/Go/SingleLink/LinkedList.go)   |
 
 
 ## Algorithms
