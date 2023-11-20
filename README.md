@@ -21,6 +21,6 @@ This repo contains examples of data structures and algorithms created by me in d
 | [Two Pointer Search](https://www.geeksforgeeks.org/two-pointers-technique/)    | [<img src="./assets/c.png" width="16" height="16">](/search/TwoPointer.c) | 
 
 
-| Sorting Algorithms | C |
-| ------------------ | ------------ |
-| [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort) | [<img src="./assets/c.png" width="16" height="16">](/sort/BubbleSort.c) |
+| Sorting Algorithms | C | Go |
+| ------------------ | ------------ | ----------- | 
+| [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort) | [<img src="./assets/c.png" width="16" height="16">](/sort/C/BubbleSort.c) | [<img src="./assets/go.png" width="16" height="16">](/sort/Go/BubbleSort/main.go) |
