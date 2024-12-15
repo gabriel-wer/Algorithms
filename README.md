@@ -6,7 +6,8 @@ This repo contains examples of data structures and algorithms created by me in d
 
 ## Data Structures
 
-
+| Structures | C |
+| ------- | ------- |
 | [List](https://en.wikipedia.org/wiki/List_(abstract_data_type))   | [<img src="./assets/c.png" width="16" height="16">](/datastructure/ArrayList.c)   |
 | [Linked List](https://en.wikipedia.org/wiki/Linked_list)          | [<img src="./assets/c.png" width="16" height="16">](/datastructure/SingleLink.c)  |
 
